@@ -1154,11 +1154,23 @@ export function addCell(software, type) {
     section3.className = 'section section3';
 
     function copyToClipboard(text) {
-        navigator.clipboard.writeText(text).then(() => {
-            console.log('Text copied to clipboard');
-        }).catch(err => {
-            console.error('Failed to copy text: ', err);
+        navigator.clipboard.writeText(text).then(function() {
+            showNotification('Setup script URL copied to clipboard!');
+        }, function(err) {
+            console.error('Could not copy text: ', err);
         });
+    }
+    
+    function showNotification(message) {
+        const notification = document.createElement('div');
+        notification.className = 'notification';
+        notification.innerText = message;
+        document.body.appendChild(notification);
+        notification.style.display = 'block';
+        setTimeout(() => {
+            notification.style.display = 'none';
+            document.body.removeChild(notification);
+        }, 3000);
     }
 
     if (type === 'restricted') {

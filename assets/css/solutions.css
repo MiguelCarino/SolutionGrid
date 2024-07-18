@@ -64,6 +64,19 @@ main {
     box-sizing: border-box;
 }
 
+.notification {
+    background-color: #28a745;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    top: 5vh;
+    right: 2vh;
+    z-index: 1000;
+    border-radius: 5px;
+    display: none;
+}
+
 /* Shared button styles */
 .fedora-button,
 .debian-button,
