@@ -2,45 +2,65 @@
 main {
     flex-direction: column;
 }
-
-/* Centering the Search Bar */
-.searchbar-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 10vh; /* Adjust to place it in the vertical center */
-}
-
-.searchbar {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    max-width: 600px;
-}
-
-.searchbar input {
-    font-family: HomeVideo;
-    width: 100%;
-    padding: 10px 20px;
-    border: 2px solid #20549700;
-    border-radius: 30px;
-    background-color: #205497;
-    color: #fff;
-    font-size: 1em;
-    transition: all 0.3s ease;
-    background-color: #000;
-}
-
-.searchbar input::placeholder {
-    color: rgb(255, 255, 255);
-}
-
-.searchbar input:focus {
-    outline: none;
-    border-color: #ffcc00;
-}
-
+/*Search bar*/
+.box-input {
+    position: relative;
+  }
+  
+  .border {
+    background-image: linear-gradient(to right bottom, #e300ff, #ff00aa, #ff5956, #ffb900, #4f44e9); /* Cyberpunk gradient */
+            box-shadow: -25px -10px 30px -5px rgba(225, 0, 255, 0.5),
+                        25px -10px 30px -5px rgba(255, 0, 212, 0.5),
+                        25px 10px 30px -5px rgba(255, 174, 0, 0.5),
+                        -25px 10px 30px -5px rgba(255, 230, 0, 0.5); /* Cyberpunk box shadow */
+    border-radius: 10px;
+    padding: 4px;
+    max-width: 458px;
+  }
+  
+  .input {
+    background-color: #212121;
+    min-width: 448px;
+    max-width: 448px;
+    height: 40px;
+    padding: 0 19px 0 10px;
+    font-size: 1.1em;
+    position: relative;
+    border: none;
+    color: white;
+    outline: 0;
+    overflow: hidden;
+    
+  }
+  
+  .box-input::after,
+  .box-input::before {
+    content: "";
+    width: 130px;
+    height: 30px;
+    position: absolute;
+    z-index: -1;
+  }
+  
+  .box-input::after {
+    bottom: 0;
+    right: 0;
+  }
+  
+  .box-input::before {
+    top: 0;
+    left: 0;
+  }
+  
+  .input::placeholder {
+    transition: all 0.5s ease-in, transform 0.2s ease-in 0.6s;
+  }
+  
+  .input:focus::placeholder {
+    padding-left: 165px;
+    transform: translateY(-50px);
+  }
+  
 /* Software ID Container */
 .softwareid-container {
     flex: 1;
@@ -48,6 +68,7 @@ main {
     justify-content: center;
     align-items: flex-start; /* Aligns the content to the top */
     width: 100%;
+    padding-top: 3vh;
 }
 
 #softwareid {
@@ -269,7 +290,7 @@ main {
 }
 
 .websites-cell {
-    background-color: #6f42c1; /* Black */
+    background-color: #60b3da; /* Black */
     color: #ffffff; /* White text for better contrast */
 }
 
