@@ -1153,14 +1153,6 @@ export function addCell(software, type) {
     const section3 = document.createElement('div');
     section3.className = 'section section3';
 
-    function copyToClipboard(text) {
-        navigator.clipboard.writeText(text).then(function() {
-            showNotification('Setup script URL copied to clipboard!');
-        }, function(err) {
-            console.error('Could not copy text: ', err);
-        });
-    }
-    
     function showNotification(message) {
         const notification = document.createElement('div');
         notification.className = 'notification';
@@ -1170,9 +1162,17 @@ export function addCell(software, type) {
         setTimeout(() => {
             notification.style.display = 'none';
             document.body.removeChild(notification);
-        }, 3000);
+        }, 3000); // Reduced the display time to 3 seconds for better UX
     }
-
+    
+    function copyToClipboard(text) {
+        navigator.clipboard.writeText(text).then(function() {
+            showNotification(`${text} has been copied to the clipboard!`);
+        }, function(err) {
+            console.error('Could not copy text: ', err);
+        });
+    }
+    
     if (type === 'restricted') {
         ['dont'].forEach(os => {
             const button = document.createElement('span');
@@ -1182,8 +1182,6 @@ export function addCell(software, type) {
             button.title = 'Click to copy command';
             button.addEventListener('click', () => {
                 copyToClipboard(command);
-                const message = `BEWARE\nUnlicensed or low-quality software. Block these sources. Use reliable alternatives. Test only on non-essential systems.\n"${command}" has been copied to clipboard.`;
-                alert(message);
             });
             section3.appendChild(button);
         });
@@ -1199,8 +1197,6 @@ export function addCell(software, type) {
             button.title = 'Click to copy command';
             button.addEventListener('click', () => {
                 copyToClipboard(command);
-                const message = `Command "${command}" has been copied to clipboard.`;
-                alert(message);
             });
             section3.appendChild(button);
         });
@@ -1242,12 +1238,11 @@ export function addCell(software, type) {
             button.title = 'Click to copy command';
             button.addEventListener('click', () => {
                 copyToClipboard(command);
-                const message = `Command "${command}" has been copied to clipboard.`;
-                alert(message);
             });
             section3.appendChild(button);
         });
     }
+    
 
     softcell.appendChild(section3);
     softwareid.appendChild(softcell);
