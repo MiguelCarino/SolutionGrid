@@ -8,11 +8,11 @@ main {
   }
   
   .border {
-    background-image: linear-gradient(to right bottom, #e300ff, #ff00aa, #ff5956, #ffb900, #4f44e9); /* Cyberpunk gradient */
-            box-shadow: -25px -10px 30px -5px rgba(225, 0, 255, 0.5),
+    background-image: linear-gradient(to right bottom, #e300ff, #3cff00, #ff5956, #fff200, #4f44e9); /* Cyberpunk gradient */
+            box-shadow: -25px -10px 30px -5px rgba(78, 76, 78, 0.5),
                         25px -10px 30px -5px rgba(255, 0, 212, 0.5),
-                        25px 10px 30px -5px rgba(255, 174, 0, 0.5),
-                        -25px 10px 30px -5px rgba(255, 230, 0, 0.5); /* Cyberpunk box shadow */
+                        25px 10px 30px -5px rgba(255, 0, 0, 0.5),
+                        -25px 10px 30px -5px rgba(236, 213, 1, 0.5); /* Cyberpunk box shadow */
     border-radius: 10px;
     padding: 4px;
     max-width: 458px;

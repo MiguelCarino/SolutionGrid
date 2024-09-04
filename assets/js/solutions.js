@@ -1186,7 +1186,7 @@ export function addCell(software, type) {
             section3.appendChild(button);
         });
     } else if (type === 'commercialSoftware') {
-        ['fedora', 'debian', 'windows', 'macos'].forEach(os => {
+        ['windows', 'macos', 'fedora', 'debian'].forEach(os => {
             const button = document.createElement('span');
             const command = os === 'fedora' ? `sudo dnf install ${software.cfed}` :
                 os === 'debian' ? `sudo apt install ${software.cdeb}` :
@@ -1227,7 +1227,7 @@ export function addCell(software, type) {
             section3.appendChild(button);
         });
     } else if (type === 'default') {
-        ['fedora', 'debian', 'windows', 'macos'].forEach(os => {
+        ['windows', 'macos', 'fedora', 'debian'].forEach(os => {
             const button = document.createElement('span');
             const command = os === 'fedora' ? `sudo dnf install ${software.cfed}` :
                 os === 'debian' ? `sudo apt install ${software.cdeb}` :
