@@ -457,6 +457,14 @@ export const freeSoftware = [
         cfed: 'python pip && pip install argostranslategui',
         cwin: 'AdrienAllard.FileConverter',
         cmac: 'sorry, not available'
+    },
+    {
+        id: 'Easily run large language models on the terminal',
+        url: 'https://ollama.com/',
+        solution: 'ollama.com',
+        cfed: 'curl -fsSL https://ollama.com/install.sh | sh',
+        cwin: 'sorry, not available',
+        cmac: 'brew install ollama'
     }
 ];
 
@@ -1081,6 +1089,21 @@ export const websites = [
         id: 'SVG compressor',
         url: 'https://vecta.io/nano',
         solution: 'vecta.io'
+    },
+    {
+        id: 'Linux Vendor Firmware Service',
+        url: 'https://fwupd.org/',
+        solution: 'fwupd.org'
+    },
+    {
+        id: 'Privacy oriented AI chat by DuckDuckGo ',
+        url: 'https://duck.ai/',
+        solution: 'duck.ai'
+    },
+    {
+        id: 'Easily run large language models on the terminal',
+        url: 'https://ollama.com/',
+        solution: 'ollama.com'
     }
 ];
 
