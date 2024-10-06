@@ -113,7 +113,9 @@ main {
 
 /* Specific button backgrounds */
 .fedora-button {
-    background-image: url('https://raw.githubusercontent.com/MiguelCarino/Carino-Systems/main/assets/images/Fedora_icon_\(2021\).svg');
+    background-image: url('https://raw.githubusercontent.com/MiguelCarino/Carino-Systems/main/assets/images/rinux.webp');
+    width: 3.5vh;
+    height: 3.5vh;
 }
 
 .debian-button {

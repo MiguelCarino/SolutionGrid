@@ -1071,6 +1071,16 @@ export const websites = [
         id: 'cli/terminal Tools Catalog',
         url: 'https://terminaltrove.com/',
         solution: 'terminaltrove.com'
+    },
+    {
+        id: 'Raster to Vector Graphics Converter built on top of visioncortex',
+        url: 'https://www.visioncortex.org/vtracer/',
+        solution: 'vtracer'
+    },
+    {
+        id: 'SVG compressor',
+        url: 'https://vecta.io/nano',
+        solution: 'vecta.io'
     }
 ];
 
