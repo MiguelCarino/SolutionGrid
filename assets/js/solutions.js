@@ -1196,12 +1196,11 @@ export function addCell(software, type) {
             section3.appendChild(button);
         });
     } else if (type === 'commercialSoftware') {
-        ['windows', 'macos', 'fedora', 'debian'].forEach(os => {
+        ['windows', 'macos', 'fedora'].forEach(os => {
             const button = document.createElement('span');
             const command = os === 'fedora' ? `sudo dnf install ${software.cfed}` :
-                os === 'debian' ? `sudo apt install ${software.cdeb}` :
-                    os === 'windows' ? `winget install -e --id ${software.cwin}` :
-                        `brew install ${software.cmac}`;
+                os === 'windows' ? `winget install -e --id ${software.cwin}` :
+                    `brew install ${software.cmac}`;
             button.className = `${os}-button span-space`;
             button.setAttribute('data-text', command);
             button.title = 'Click to copy command';
@@ -1237,11 +1236,10 @@ export function addCell(software, type) {
             section3.appendChild(button);
         });
     } else if (type === 'default') {
-        ['windows', 'macos', 'fedora', 'debian'].forEach(os => {
+        ['windows', 'macos', 'fedora'].forEach(os => {
             const button = document.createElement('span');
             const command = os === 'fedora' ? `sudo dnf install ${software.cfed}` :
-                os === 'debian' ? `sudo apt install ${software.cdeb}` :
-                    os === 'windows' ? `winget install -e --id ${software.cwin}` :
+                os === 'windows' ? `winget install -e --id ${software.cwin}` :
                         `brew install ${software.cmac}`;
             button.className = `${os}-button span-space`;
             button.setAttribute('data-text', command);
