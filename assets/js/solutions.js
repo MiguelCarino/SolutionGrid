@@ -1104,6 +1104,16 @@ export const websites = [
         id: 'Easily run large language models on the terminal',
         url: 'https://ollama.com/',
         solution: 'ollama.com'
+    },
+    {
+        id: 'Simple editor for crontab schedule expressions',
+        url: 'https://crontab.guru/',
+        solution: 'crontab.guru'
+    },
+    {
+        id: 'AI-powered research assistant and note-taking tool by Google',
+        url: 'https://notebooklm.google.com/',
+        solution: 'notebooklm.google.com'
     }
 ];
 
