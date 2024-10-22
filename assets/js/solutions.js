@@ -1211,9 +1211,44 @@ export const websites = [
         solution: 'Photopea'
     },
     {
-        id: 'IPTV channels from all over the world ',
+        id: 'IPTV channels from all over the world',
         url: 'https://iptv-org.github.io/',
         solution: 'iptv-org'
+    },
+    {
+        id: 'Home Improvement and Remodeling',
+        url: 'https://www.thisoldhouse.com/',
+        solution: 'thisoldhouse.com'
+    },
+    {
+        id: 'Image Based Geolocation Tool',
+        url: 'https://geospy.ai/',
+        solution: 'geospy.ai'
+    },
+    {
+        id: 'Manuals Library',
+        url: 'https://manualslib.com/',
+        solution: 'manualslib.com'
+    },
+    {
+        id: 'Interactive Game Maps',
+        url: 'https://mapgenie.io/',
+        solution: 'mapgenie.io'
+    },
+    {
+        id: 'Origin place of the most notable people in history',
+        url: 'https://tjukanovt.github.io/notable-people',
+        solution: 'notable-people'
+    },
+    {
+        id: 'Map of stigmatized properties',
+        url: 'https://www.housecreep.com/',
+        solution: 'housecreep.com'
+    },
+    {
+        id: 'Information about plane crashes',
+        url: 'https://planecrashinfo.com/',
+        solution: 'planecrashinfo.com'
     }
 ];
 
