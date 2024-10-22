@@ -1114,6 +1114,101 @@ export const websites = [
         id: 'AI-powered research assistant and note-taking tool by Google',
         url: 'https://notebooklm.google.com/',
         solution: 'notebooklm.google.com'
+    },
+    {
+        id: 'Endless driving zen',
+        url: 'https://slowroads.io/',
+        solution: 'slowroads.io'
+    },
+    {
+        id: 'Endless typing shooter',
+        url: 'https://zty.pe/',
+        solution: 'ztype'
+    },
+    {
+        id: 'Auto repair resources and parts for cars',
+        url: 'https://www.1aauto.com/',
+        solution: '1aauto.com'
+    },
+    {
+        id: 'Car repair manuals for everyone',
+        url: 'https://charm.li/',
+        solution: 'CHARM'
+    },
+    {
+        id: 'Color, animation and fake (loading) screens',
+        url: 'https://www.whitescreen.online/',
+        solution: 'whitescreen.online'
+    },
+    {
+        id: 'Handwritten-like signature generator',
+        url: 'https://onlinesignatures.net/',
+        solution: 'onlinesignatures.net'
+    },
+    {
+        id: 'Transform static sketches into animations',
+        url: 'https://sketch.metademolab.com/canvas',
+        solution: 'canvas'
+    },
+    {
+        id: 'Resume builder',
+        url: 'https://rxresu.me/',
+        solution: 'rxresu.me'
+    },
+    {
+        id: 'Open-Source UI elements',
+        url: 'https://uiverse.io/',
+        solution: 'uiverse.io'
+    },
+    {
+        id: 'Lip reading from video',
+        url: 'https://www.readtheirlips.com/',
+        solution: 'readtheirlips.com'
+    },
+    {
+        id: 'Dungeon and Dragons Mapmaking',
+        url: 'https://www.dungeonscrawl.com/',
+        solution: 'dungeonscrawl.com'
+    },
+    {
+        id: 'Distribute an image into multiple paper sheets',
+        url: 'https://rasterbator.net/',
+        solution: 'rasterbator.net'
+    },
+    {
+        id: 'Surprise Date Spot',
+        url: 'https://surprisedatespot.com/',
+        solution: 'surprisedatespot.com'
+    },
+    {
+        id: 'Find featured items on TV shows',
+        url: 'https://shopyourtv.com/',
+        solution: 'shopyourtv.com'
+    },
+    {
+        id: 'Steb by step textbook solutions',
+        url: 'https://www.litsolutions.org/',
+        solution: 'www.litsolutions.org'
+    },
+    {
+        id: 'Read books by typing them',
+        url: 'https://entertrained.app/',
+        solution: 'entertrained'
+    },
+    {
+        id: 'Combine two cuisines into one recipe',
+        url: 'https://artsandculture.google.com/experiment/food-mood/HwHnGalZ3up0EA',
+        solution: 'Food Mood'
+    },
+    {
+        id: 'Make alphabet themed pictures',
+        url: 'https://labs.google/gentype',
+        solution: 'Gentype'
+    },
+    {
+        id: 'Online Photo Editor',
+        url: 'https://www.photopea.com/',
+        solution: 'Photopea'
     }
 ];
 
