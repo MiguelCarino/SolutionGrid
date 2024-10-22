@@ -1209,6 +1209,11 @@ export const websites = [
         id: 'Online Photo Editor',
         url: 'https://www.photopea.com/',
         solution: 'Photopea'
+    },
+    {
+        id: 'IPTV channels from all over the world ',
+        url: 'https://iptv-org.github.io/',
+        solution: 'iptv-org'
     }
 ];
 
