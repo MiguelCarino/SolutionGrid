@@ -1249,6 +1249,16 @@ export const websites = [
         id: 'Information about plane crashes',
         url: 'https://planecrashinfo.com/',
         solution: 'planecrashinfo.com'
+    },
+    {
+        id: 'Practice Test Automation Website',
+        url: 'https://practice.expandtesting.com/',
+        solution: 'Practice'
+    },
+    {
+        id: 'Suite of tools for automating web browsers.',
+        url: 'https://www.selenium.dev/',
+        solution: 'Selenium'
     }
 ];
 
